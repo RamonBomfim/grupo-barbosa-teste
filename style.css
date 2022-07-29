@@ -231,11 +231,6 @@ header {
     margin-bottom: 1rem;
 }
 
-.helper img {
-    height: 1.3rem;
-    margin-right: 0.3rem;
-}
-
 .helper {
     background: #eaf8da;
     color: #000;
@@ -248,6 +243,11 @@ header {
     border-radius: 0.5rem;
     margin: auto 0;
     padding: 1rem;
+}
+
+.helper img {
+    height: 1.3rem;
+    margin-right: 0.3rem;
 }
 
 .helper span {
@@ -272,19 +272,19 @@ header {
     margin: 0.5rem;
 }
 
-.sinais h2 {
+.header-sinais {
+    display: flex;
+    align-items: center;
+}
+
+.header-sinais h2 {
     font-size: 1.3rem;
     font-weight: 400;
 }
 
-.sinais img {
+.header-sinais img {
     height: 1.3rem;
     margin-right: 0.3rem;
-}
-
-.header-sinais {
-    display: flex;
-    align-items: center;
 }
 
 .container-sinais {
@@ -358,4 +358,218 @@ header {
     font-weight: 300;
     text-align: center;
     padding: 0.2rem;
+}
+
+@media only screen
+and (min-width: 960px)
+and (max-width: 1230px)
+{
+    .helper {
+        width: 10rem;
+    }
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 960px)
+{
+    .header-area {
+        width: 100%;
+    }
+
+    .header-area h2 {
+        font-size: 1.5rem;
+    }
+
+    .header-area a {
+        width: 6rem;
+        font-size: 0.8rem;
+    }
+
+    .container-helpers {
+        flex-wrap: wrap;
+    }
+
+    .helper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 60%;
+        width: 9rem;
+        margin: 0 1rem 0.5rem 1rem;
+    }
+
+    .helper:last-child {
+        flex-wrap: wrap;
+        padding: 0.4rem;
+    }
+
+    .helper img {
+        height: 1rem;
+    }
+    
+    .helper span {
+        font-size: 1rem;
+    }
+
+    .helper span:last-child {
+        font-size: 0.2rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .helper h2 {
+        font-size: 1.2rem;
+    }
+
+    .helper h2:last-child {
+        font-size: 0.8rem;
+    }
+
+    .container-content {
+        flex-direction: column;
+    }
+
+    .sinais {
+        width: 95%;
+    }
+
+    .container-sinais {
+        height: 150px;
+    }
+
+    .historico-sinais {
+        width: 95%;
+    }
+
+    .table-container {
+        height: 340px;
+    }
+    
+    .historico-sinais thead tr {
+        font-size: 0.8rem;
+    }
+    
+    .historico-sinais td {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 735px)
+{
+    .aside-bar {
+        width: 5rem;
+        margin: 0 1rem 0 0;
+        padding: 0.8rem;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .aside-bar h1 {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+    
+    .nav-buttons {
+        width: 2.5rem;
+        margin: 0.5rem auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-buttons a {
+        overflow: hidden;
+        color: transparent;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .header-sinais h2 {
+        font-size: 1rem;
+    }
+    
+    .header-sinais img {
+        height: 1rem;
+    }
+
+    .header-historico img {
+        height: 1rem;
+    }
+    
+    .header-historico h2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 420px)
+{
+    .helper {
+        width: 4rem;
+        margin: 0 1rem 0.5rem 1rem;
+    }
+
+    .helper:last-child {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0.4rem;
+    }
+
+    .helper img {
+        height: 0.8rem;
+    }
+    
+    .helper span {
+        overflow: hidden;
+        color: transparent;
+        font-size: 0;
+    }
+    
+    .helper h2 {
+        font-size: 1rem;
+    }
+
+    .helper h2:last-child {
+        font-size: 0.6rem;
+    }
+
+    .container-content {
+        justify-content: flex-start;
+    }
+
+    .header-sinais h2 {
+        font-size: 0.8rem;
+    }
+    
+    .header-sinais img {
+        height: 0.8rem;
+    }
+
+    .header-historico img {
+        height: 0.8rem;
+    }
+    
+    .header-historico h2 {
+        font-size: 0.8rem;
+    }
+
+    .container-sinais {
+        height: 100px;
+    }
+
+    .table-container {
+        height: 250px;
+    }
+
+    .historico-sinais thead tr {
+        font-size: 0.7rem;
+    }
+    
+    .historico-sinais td {
+        font-size: 0.6rem;
+    }
 }
