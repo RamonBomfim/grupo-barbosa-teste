@@ -1,0 +1,361 @@
+:root {
+    font-size: 93.75%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#1A759F, #76C893, #D9ED92);
+    color: #fefae0;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+}
+
+body,
+input,
+button,
+textarea,
+a {
+  font: 400 1.5rem/1 "Roboto", sans-serif;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+aside {
+    display: flex;
+}
+
+.aside-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    width: 16rem;
+    background: #1c3539;
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.8);
+    margin: auto 2rem;
+    padding: 1.3rem;
+    border: 0;
+    border-radius: 1rem;
+}
+
+.aside-bar h1 {
+    background: -webkit-linear-gradient(#89CCF6, #EAF8DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Bebas Neue";
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+    padding: 0.7rem 0;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    margin: 0.5rem auto;
+}
+
+.nav-buttons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 2.5rem;
+    margin: 0 0.5rem 1rem 0.5rem;
+    padding: 0.6rem;
+    background: #eaf8da;
+    color: #000;
+    border-radius: 0.5rem;
+
+    transition: background-color 0.3s;
+}
+
+.nav-buttons a:hover {
+    background: #1c3539;
+    color: #eaf8da;
+}
+
+.nav-buttons a:first-child {
+    box-shadow: 0px -2px 7px 0px rgba(232,225,225,0.6);
+    -webkit-box-shadow: 0px -2px 7px 0px rgba(232,225,225,0.6);
+    -moz-box-shadow: 0px -2px 7px 0px rgba(232,225,225,0.6);
+}
+
+.nav-buttons a + a {
+    box-shadow: 0px 0px 7px 0px rgba(232,225,225,0.6);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(232,225,225,0.6);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(232,225,225,0.6);
+}
+
+.nav-buttons a:last-child {
+    box-shadow: 0px 2px 7px 0px rgba(232,225,225,0.6);
+    -webkit-box-shadow: 0px 2px 7px 0px rgba(232,225,225,0.6);
+    -moz-box-shadow: 0px 2px 7px 0px rgba(232,225,225,0.6);
+}
+
+.nav-buttons img {
+    height: 1.1rem;
+    margin-right: 0.3rem;
+}
+
+.contact {
+    width: 13rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #1A759F;
+    border-radius: 0.5rem;
+    margin: 1rem 0.5rem;
+    padding: 0.6rem;
+}
+
+.contact img {
+    height: 1.1rem;
+    margin-right: 0.3rem;
+}
+
+.contact h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.contact span {
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+.contact a {
+    height: 2.5rem;
+    width: 12rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: 0.5rem;
+    background: #fca311;
+    color:#000;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.8rem 0;
+    transition: background-color 0.3s;
+}
+
+.contact a:hover {
+    background: #E76F51;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    margin: 1.9rem 0;
+}
+
+.header-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem;
+}
+
+.header-area h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header-area a img {
+    height: 1.1rem;
+    margin-right: 0.3rem;
+}
+
+.header-area a {
+    text-decoration: none;
+    background: #fca311;
+    color: #000;
+    height: 2.5rem;
+    width: 9rem;    
+    border: 0;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    transition: background-color 0.3s;
+}
+
+.header-area a:hover {
+    background: #E76F51;
+    text-decoration: underline;
+}
+
+.helpers {
+    display: flex;
+    width: 100%;
+    height: 6rem;
+}
+
+.container-helpers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.helper img {
+    height: 1.3rem;
+    margin-right: 0.3rem;
+}
+
+.helper {
+    background: #eaf8da;
+    color: #000;
+    box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.6);
+    height: 90%;
+    width: 15rem;
+    border: 0;
+    border-radius: 0.5rem;
+    margin: auto 0;
+    padding: 1rem;
+}
+
+.helper span {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.helper h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container-content {
+    display: flex;
+    justify-content: space-between;
+    height: 520px;
+    padding: 1rem;
+}
+
+.sinais {
+    width: 30%;
+    margin: 0.5rem;
+}
+
+.sinais h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.sinais img {
+    height: 1.3rem;
+    margin-right: 0.3rem;
+}
+
+.header-sinais {
+    display: flex;
+    align-items: center;
+}
+
+.container-sinais {
+    background: #eaf8da;
+    color: #000;
+    box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.6);
+    width: 100%;
+    height: 470px;
+    border: 0;
+    border-radius: 0.5rem;
+    margin: 0.3rem 0;
+    padding: 1rem;
+}
+
+.historico-sinais {
+    width: 65%;
+    margin: 0.5rem;
+}
+
+.header-historico {
+    display: flex;
+    align-items: center;
+}
+
+.header-historico img {
+    height: 1.3rem;
+    margin-right: 0.3rem;
+}
+
+.header-historico h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.table-container {
+    background: #eaf8da;
+    color: #000;
+    box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.6);
+    width: 100%;
+    height: 470px;
+    border: 0;
+    border-radius: 0.5rem;
+    margin: 0.3rem 0;
+    padding: 1rem;
+}
+
+.historico-sinais table {
+    width: 100%;
+    max-height: 460px;
+    border: 0;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+
+.historico-sinais thead {
+    height: 3rem;
+}
+
+.historico-sinais thead tr {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.historico-sinais td {
+    width: 25%;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.2rem;
+}
